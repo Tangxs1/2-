@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="field1"><br>
+    <h2 id="info1"></h2>
+
+    <input type="text" id="field2">
+    <h2 id="info2"></h2>
+    <script>
+        var oField1 = document.getElementById('field1');
+        var oField2 = document.getElementById('field2');
+        var oInfo1 = document.getElementById('info1');
+        var oInfo2 = document.getElementById('info2');
+        oField1.onkeypress = function(e){
+            oInfo1.innerText = '你输入的字符码是'+e.charCode;
+        };
+        oField2.onkeydown = function(e){
+            oInfo2.innerText = '你按下健的字符码是'+e.charCode;
+        };
+    </script>
+</body>
+</html> 
